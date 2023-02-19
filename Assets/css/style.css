@@ -1,6 +1,20 @@
+:root {
+  --dark: #464e73;
+  --darkP: #554673;
+  --mid: #466473;
+  --lightB: #b0c4cf;
+  --green: #736b46;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  background-color: var(--dark);
+  color: var(--lightB);
+}
+
+header {
+  border-bottom: 5px solid var(--green);
 }
 
 textarea {
@@ -21,36 +35,39 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 1px solid var(--lightB);
+  border-bottom: 1px solid var(--lightB);
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: var(--darkP);
+  color: var(--lightB);
+  border-top: 2px solid var(--lightB);
 }
 
+/* classlist.add/remove */
+
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: var(--mid);
+  color: var(--lightB);
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: var(--darkP);
+  color: var(--lightB);
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: var(--green);
+  color: var(--lightB);
 }
 
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: var(--green);
+  color: var(--lightB);
 }
 
 .saveBtn i:hover {
