@@ -1,9 +1,9 @@
 :root {
-  --dark: #464e73;
+  --dark: #2c4052;
   --darkP: #554673;
   --mid: #466473;
   --lightB: #b0c4cf;
-  --green: #736b46;
+  --green: #81642ddc;
 }
 
 body {
@@ -26,8 +26,7 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: var(--lightB);
   padding: 10px;
 }
 
@@ -61,22 +60,21 @@ textarea {
 }
 
 .past {
-  background-color: var(--mid);
+  background-color: rgba(138, 52, 46, 0.336);
   color: var(--lightB);
 }
 
 .present {
-  background-color: var(--darkP);
+  background-color: rgba(1, 100, 117, 0.534);
   color: var(--lightB);
 }
 
 .future {
-  background-color: var(--green);
+  background-color: rgba(7, 48, 25, 0.363);
   color: var(--lightB);
 }
 
 .saveBtn {
-  border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: var(--green);
