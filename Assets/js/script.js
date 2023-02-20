@@ -27,18 +27,43 @@ $(document).ready(function () {
   };
 
   // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
+  // block by comparing the id to the current hour. HINTS: How can the id attribute of each time-block be used to conditionally add or remove the past, present, and future classes?
 
-  var pastPresentFuture = function {
-    for (var i = 9; i < 18; i++) {
-      $("#" + i).val 
-    }
-  }
+  var pastPresentFuture = function () {
+    //call at bottom with local storage save
+    var timeBlock = $(".time-block");
+    console.log(currentTime);
+
+    //we can iterate over the DOM elements of the jQuery object and can execute a function for every matched element   .each
+    //https://www.javatpoint.com/jquery-each-method
+
+    //The parseInt method parses a value as a string and returns the first integer.
+    //https://www.w3schools.com/jsref/jsref_parseint.asp
+
+    $(timeBlock).each(function () {
+      var blockHour = parseInt($(this).attr("data-hour"));
+      console.log(blockHour);
+
+      if (blockHour < currentTime) {
+        $(this).addClass("past");
+      } else if (blockHour > currentTime) {
+        $(this).addClass("future");
+      } else {
+        $(this).addClass("present");
+      }
+    });
+  };
+
+  // if (blockHour === currentTime) {
+  //   $(this).addClass("present");
+  // }
+
+  // $(".text") {
+  //   var
+  // }
 
   // saveBtn.on("click", timeBlock());
+  pastPresentFuture();
   saveLocal();
 });
 
@@ -63,3 +88,5 @@ $(document).ready(function () {
 //   if (hour9 == currentTime) {
 //   }
 // };
+
+//How can Day.js be used to get the current hour in 24-hour time?
