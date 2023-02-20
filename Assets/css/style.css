@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   background-color: var(--dark);
   color: var(--lightB);
@@ -15,6 +15,11 @@ body {
 
 header {
   border-bottom: 5px solid var(--green);
+  font-weight: bold;
+}
+
+.display-3 {
+  font-size: 80px;
 }
 
 textarea {
@@ -46,6 +51,14 @@ textarea {
 }
 
 /* classlist.add/remove */
+
+.saveTest {
+  background-color: rgb(117, 172, 172);
+}
+
+.currentDay {
+  font-size: 24px;
+}
 
 .past {
   background-color: var(--mid);
