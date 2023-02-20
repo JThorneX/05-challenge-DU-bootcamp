@@ -1,7 +1,7 @@
 # Week 3 DU bootcamp challenge
 
 ### Focused on local storage, day.js, and researched parseInt and .each to make this project
-#### Also, on a front-end level, I also worked on the pastel theme concept, which isn't my strongest.
+#### Also, on a front-end level, I also worked on the pastel theme concept, which isn't my strongest. I realize I should have gone lighter but I abhor light themes.
 
 ## Day Calendar
 
