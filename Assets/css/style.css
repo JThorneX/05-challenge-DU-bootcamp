@@ -1,14 +1,15 @@
 :root {
   --dark: #2c4052;
-  --darkP: #554673;
+  --darkP: #53476d;
   --mid: #466473;
   --lightB: #b0c4cf;
-  --green: #81642ddc;
+  --green: #a38857dc;
+  --greenL: #cea964fd;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   background-color: var(--dark);
   color: var(--lightB);
 }
@@ -20,6 +21,7 @@ header {
 
 .display-3 {
   font-size: 80px;
+  color: var(--greenL);
 }
 
 textarea {
@@ -50,27 +52,27 @@ textarea {
 }
 
 /* classlist.add/remove */
-
+/* 
 .saveTest {
   background-color: rgb(117, 172, 172);
-}
+} */
 
 .currentDay {
   font-size: 24px;
 }
 
 .past {
-  background-color: rgba(138, 52, 46, 0.336);
+  background-color: rgba(160, 76, 70, 0.507);
   color: var(--lightB);
 }
 
 .present {
-  background-color: rgba(1, 100, 117, 0.534);
+  background-color: rgba(45, 121, 108, 0.534);
   color: var(--lightB);
 }
 
 .future {
-  background-color: rgba(7, 48, 25, 0.363);
+  background-color: rgba(64, 126, 50, 0.473);
   color: var(--lightB);
 }
 
